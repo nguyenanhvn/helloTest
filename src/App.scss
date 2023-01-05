@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,600,700,800&subset=vietnamese,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Ballet:100,200,300,400,500,600,700,800&subset=vietnamese,latin-ext");
+
+@mixin font(){
+    font-family: 'Ballet';
+}
+
+body{
+    margin: 0;
+    font-family: 'Playfair Display';
+    background: #F9F6F2;
+}
+.container{
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+
+/* Marry 1 */
+    .marry1{
+        position: relative;
+        .container{
+            position: relative;
+            z-index: 9;
+        }
+        .leaf-left{
+            width: 595px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media (max-width: 1600px){
+                width: 30%;
+            }
+        }
+        .leaf-right{
+            width: 505px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            @media (max-width: 1600px){
+                width: 25%;
+            }
+        }
+        .box{
+            padding-top: 145px;
+            text-align: center;
+            @media (max-width: 1600px){
+                padding-top: 120px;
+            }
+            .box-heading{
+                font-size: 48px;
+                line-height: 1.4;
+                color: #000000;
+                @media (max-width: 1600px){
+                    font-size: 2.5vw;
+                }
+            }
+            .box-name{
+                @include font;
+                font-size: 128px;
+                line-height: 2;
+                color: #1F2B18;
+                margin: 19px 0 16px;
+                @media (max-width: 1600px){
+                    font-size: 7vw;
+                }
+                span{
+                    font-size: 64px;
+                    line-height: 2;
+                    color: #1F2B18;
+                    @media (max-width: 1600px){
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+            .box-date{
+                @include font;
+                font-size: 128px;
+                line-height: 1;
+                margin: 20px 0 30px;
+                color: #1F2B18;
+                @media (max-width: 1600px){
+                    font-size: 7vw;
+                }
+            }
+        }
+    }
